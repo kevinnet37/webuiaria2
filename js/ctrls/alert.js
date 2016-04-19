@@ -26,7 +26,7 @@ angular.module('webui.ctrls.alert', [
         if (scope.pendingAlerts.length > 0)
           scope.removeAlert(ind);
       }
-    }, type == "error" ? 15000 : 5000);
+    }, type == "error" ? 6000 : 3000);
 
     scope.$digest();
   });

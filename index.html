@@ -281,11 +281,15 @@
 <div role="main" class="container-fluid">
 
   <!-- {{{ alerts -->
-  <div ng-controller="AlertCtrl" class="row-fluid alerts">
-    <div class="alert alert-{{alert.type == 'error' ? 'danger' : alert.type}}" ng-repeat="alert in pendingAlerts">
-      <button type="button" class="close" ng-click="removeAlert($index)">x</button>
-      <span ng-bind-html="alert.msg"></span>
+  <div ng-controller="AlertCtrl" class="row alerts">.
+    <div class="col-md-5"></div>
+    <div class="col-md-4">
+      <div class="alert alert-{{alert.type == 'error' ? 'danger' : alert.type}}" ng-repeat="alert in pendingAlerts">
+        <button type="button" class="close" ng-click="removeAlert($index)">x</button>
+        <span ng-bind-html="alert.msg"></span>
+      </div>
     </div>
+    <div class="col-md-3"></div>
   </div>
   <!-- }}} -->
 
